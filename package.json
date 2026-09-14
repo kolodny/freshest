@@ -1,0 +1,38 @@
+{
+  "name": "freshest",
+  "version": "1.0.0",
+  "description": "Versioned schema migrations for persisted data, with reachability checked by the type system.",
+  "keywords": [
+    "migration",
+    "schema-migration",
+    "versioning",
+    "typescript",
+    "persistence"
+  ],
+  "license": "MIT",
+  "author": "Moshe Kolodny",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "npm run test:types && npm run test:unit",
+    "test:types": "tsc",
+    "test:unit": "tsx --test src/index.test.ts",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}

@@ -9,6 +9,14 @@
     "typescript",
     "persistence"
   ],
+  "homepage": "https://github.com/kolodny/freshest#readme",
+  "bugs": {
+    "url": "https://github.com/kolodny/freshest/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolodny/freshest.git"
+  },
   "license": "MIT",
   "author": "Moshe Kolodny",
   "type": "commonjs",

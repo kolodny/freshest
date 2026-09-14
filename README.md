@@ -1,5 +1,8 @@
 # freshest
 
+[![npm version](https://img.shields.io/npm/v/freshest.svg)](https://www.npmjs.com/package/freshest)
+[![npm downloads](https://img.shields.io/npm/dm/freshest.svg)](https://www.npmjs.com/package/freshest)
+
 Versioned schema migrations for persisted data, with the version tracked in the type system.
 
 Stored data outlives the shape you wrote it in. `Freshest` lets you describe how each shape
